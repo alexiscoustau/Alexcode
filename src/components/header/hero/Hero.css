@@ -1,0 +1,17 @@
+.header {
+    height: 550px;
+  }
+
+.container-fondo{
+   height: 400px;
+   }
+
+.fondo {
+    width: 100%;
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 100%;
+   background-position: center;
+   
+   background-image: url("/src/assets/fondo-tiny.jpg");
+    }     
