@@ -1,0 +1,13 @@
+.card {
+    width: 13rem;
+    box-shadow: 5px 3px 8px -4px rgba(0,0,0,0.38);
+    
+}
+.budin{
+    width: 100px;
+}
+.btn {
+    color: white;
+background-color: rgb(235, 121, 210);
+}
+
