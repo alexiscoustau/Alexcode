@@ -1,14 +1,26 @@
 import ContainerList from './components/main/ContainerList'
-import Header from './components/header/Header'
+import { BrowserRouter , Router , Route, Routes } from 'react-router-dom'
+import About from './components/header/navbar/about/About'
+import Contacto from './components/header/navbar/contacto/Contacto'
+import Layout from './components/pages/Layout'
 import './App.css'
-import Count from './components/count/count'
 function App() {
   
 
   return (
     <>
-      <Header/>
-      <ContainerList/>
+    <BrowserRouter>
+       <Layout>
+         <Routes>
+           <Route path='/' element={<ContainerList/>}/>
+           <Route path='/about' element={<About/>}/>  
+           <Route path='/contacto' element={<Contacto/>}/>
+         </Routes>
+           
+        </Layout>
+    </BrowserRouter>
+    
+      
     </>
   )
 }

@@ -23,14 +23,6 @@ getProduct(cat)
 
 },[cat])
 
-  
-  //<div className="row ">
-    //    <div className="col-2 aside"></div>
-      //  <button onClick={()=> setcat("budines")} >budines</button>
-        //<button onClick={()=> setcat("pastafrolas")} >pastafrolas</button>
-       // <div className="col-8 productos "><ListItems product = {product}/></div>
-       // <div className="col-2 aside"></div>
-      //</div>
 
     return(
         
@@ -38,7 +30,7 @@ getProduct(cat)
       <div className="row ">
           <div className="col-1 aside"></div>
           <div className="col-10">
-            <h1 className="text-center">PRODUCTOS</h1>
+            
             <button onClick={()=> setcat("budin")} className="btn btn-primary text-center" >budines</button>
             <button onClick={()=> setcat("pastafrolas")} className="btn btn-primary " >pastafrolas</button>
             <ListItems product = {product}/></div>
