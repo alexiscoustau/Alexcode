@@ -2,15 +2,13 @@ export const categoria = ["about", "contact", "budin", "pastafrolas"];
 
 export const itemss = [
   {
-    id: 1,
     categoria: "budin",
     producto: "vainilla",
     tamaño: "chico",
-    precio: "3.000",
+    precio: "3,000",
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 2,
     categoria: "budin ",
     producto: "vainilla",
     tamaño: "grande",
@@ -18,7 +16,6 @@ export const itemss = [
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 3,
     categoria: "budin",
     producto: "naranja",
     tamaño: "chico",
@@ -26,7 +23,6 @@ export const itemss = [
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 4,
     categoria: "budin",
     producto: "naranja",
     tamaño: "grande",
@@ -34,7 +30,6 @@ export const itemss = [
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 5,
     categoria: "budin",
     producto: "limon",
     tamaño: "chicos",
@@ -42,7 +37,6 @@ export const itemss = [
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 6,
     categoria: "budin",
     producto: "limon",
     tamaño: "grande",
@@ -50,7 +44,6 @@ export const itemss = [
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 7,
     categoria: "budin",
     producto: "banana",
     tamaño: "chico",
@@ -58,7 +51,6 @@ export const itemss = [
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 8,
     categoria: "budin",
     producto: "banana",
     tamaño: "grande",
@@ -66,7 +58,6 @@ export const itemss = [
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 9,
     categoria: "budin",
     producto: "zanahoria",
     tamaño: "chico",
@@ -74,7 +65,6 @@ export const itemss = [
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 10,
     categoria: "budin",
     producto: "zanahoria",
     tamaño: "grande",
@@ -82,7 +72,6 @@ export const itemss = [
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 11,
     categoria: "budin",
     producto: "chocobrownie",
     tamaño: "chico",
@@ -90,7 +79,6 @@ export const itemss = [
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 12,
     categoria: "budin",
     producto: "chocobrownie",
     tamaño: "grande",
@@ -98,7 +86,6 @@ export const itemss = [
     image: "/src/assets/budin.jpg",
   },
   {
-    id: 13,
     categoria: "pastafrolas",
     producto: "membrillo",
     tamaño: "chico",
@@ -106,7 +93,6 @@ export const itemss = [
     image: "/src/assets/pastafrola.jpg",
   },
   {
-    id: 14,
     categoria: "pastafrolas",
     producto: "membrilla",
     tamaño: "grande",
@@ -114,7 +100,6 @@ export const itemss = [
     image: "/src/assets/pastafrola.jpg",
   },
   {
-    id: 15,
     categoria: "pastafrolas",
     producto: "batata",
     tamaño: "chico",
@@ -122,7 +107,6 @@ export const itemss = [
     image: "/src/assets/pastafrola.jpg",
   },
   {
-    id: 16,
     categoria: "pastafrolas",
     producto: "batata",
     tamaño: "grande",
@@ -130,7 +114,6 @@ export const itemss = [
     image: "/src/assets/pastafrola.jpg",
   },
   {
-    id: 17,
     categoria: "pastafrolas",
     producto: "mixta",
     tamaño: "chico",
@@ -138,7 +121,6 @@ export const itemss = [
     image: "/src/assets/pastafrola.jpg",
   },
   {
-    id: 18,
     categoria: "pastafrolas",
     producto: "mixta",
     tamaño: "grande",
@@ -146,7 +128,6 @@ export const itemss = [
     image: "/src/assets/pastafrola.jpg",
   },
   {
-    id: 19,
     categoria: "pastafrolas",
     producto: "ricota",
     tamaño: "chico",
@@ -154,7 +135,6 @@ export const itemss = [
     image: "/src/assets/pastafrola.jpg",
   },
   {
-    id: 20,
     categoria: "pastafrolas",
     producto: "ricota",
     tamaño: "grande",
@@ -162,7 +142,6 @@ export const itemss = [
     image: "/src/assets/pastafrola.jpg",
   },
   {
-    id: 21,
     categoria: "pastafrolas",
     producto: "ricota dulce de leche",
     tamaño: "chico",
@@ -170,7 +149,6 @@ export const itemss = [
     image: "/src/assets/pastafrola.jpg",
   },
   {
-    id: 22,
     categoria: "pastafrolas",
     producto: "ricota dulce de leche",
     tamaño: "grande",

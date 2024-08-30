@@ -1,5 +1,4 @@
 import { useState, useEffect, createContext, useContext } from "react";
-import { json } from "react-router-dom";
 
 const cartContext = createContext();
 
@@ -52,11 +51,34 @@ const CartContextProvider = ({ children }) => {
     localStorage.setItem("qty", JSON.stringify(qty));
   };
 
+  const removeItem = (id, precio, qty) => {
+    setTotal(total - precio * qty);
+    SetQtyItems(qtyItems - qty);
+
+    const newCart = cart.filter((elem) => elem.id !== id);
+
+    setCart(newCart);
+    localStorage.setItem("cart", JSON.stringify(newCart));
+    localStorage.setItem("total", JSON.stringify(total));
+    localStorage.setItem("qty", JSON.stringify(qty));
+  };
+
+  const clearCart = () => {
+    setCart([]);
+    setTotal(0);
+    SetQtyItems(0);
+    localStorage.removeItem("cart");
+    localStorage.removeItem("total");
+  };
+
   const contextValue = {
     titulo: "curso de react",
+    total,
+    cart,
     qtyItems,
-
+    clearCart,
     addToCard,
+    removeItem,
   };
 
   return <Provider value={contextValue}>{children}</Provider>;

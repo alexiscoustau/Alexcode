@@ -1,23 +1,39 @@
 import { useState, useEffect } from "react";
-import { getProduct } from "../Datos/fechData";
+import firebase from "firebase/compat/app";
 import ListItems from "./listitems/ListItems";
 import "./ContainerList.css";
 import { useParams } from "react-router-dom";
-import { categoria } from "../MockData/MockData";
+import { db } from "../../firebase/DbConnect";
+import { collection, doc, getDocs, query, where } from "firebase/firestore";
 
 const ContainerList = () => {
   const [product, setproduct] = useState([]);
-  const producto = useParams();
+  const { producto } = useParams();
   useEffect(() => {
-    getProduct(producto.producto)
-      .then((res) => {
-        setproduct(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => {});
-  }, [producto.producto]);
+    const productscColletion = collection(db, "productos");
+    if (producto) {
+      const consulta = query(
+        productscColletion,
+        where("categoria", "==", producto)
+      );
+
+      getDocs(consulta).then(({ docs }) => {
+        const prodFromDocs = docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setproduct(prodFromDocs);
+      });
+    } else {
+      getDocs(productscColletion).then(({ docs }) => {
+        const prodFromDocs = docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setproduct(prodFromDocs);
+      });
+    }
+  }, [producto]);
 
   return (
     <>
