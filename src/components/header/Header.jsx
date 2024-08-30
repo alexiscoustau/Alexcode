@@ -1,16 +1,13 @@
-import Hero from "./hero/Hero"
-import Navbar from "./navbar/Navbar"
+import Hero from "./hero/Hero";
+import Navbar from "./navbar/Navbar";
 
+const Header = () => {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
+};
 
-const Header =()=> {
-
-    return(
-        <>
-          <Navbar/>
-          <Hero/>
-        </>
-       
-    )
-}
-
-export default Header
+export default Header;
